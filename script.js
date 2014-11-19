@@ -101,19 +101,16 @@
         Game = {
             
             choices_names: {
-            	'Wild' 		 : "SYM1.png", 
+            	'Wild' 	     : "SYM1.png", 
             	'Strawberry' : "SYM3.png", 
-            	'Ananas' 	 : "SYM4.png", 
-            	'Lemon' 	 : "SYM5.png", 
+            	'Ananas'     : "SYM4.png", 
+            	'Lemon'      : "SYM5.png", 
             	'GreenCandy' : "SYM6.png", 
-            	'Vine' 		 : "SYM7.png"
+            	'Vine' 	     : "SYM7.png"
             },
 
-            
             ctx: null,
-            
             choices: [],
-            
             slots : [],
             
             init: function() {
@@ -126,7 +123,6 @@
                     img.src = "img/" + this.choices_names[index];
                     img.alt = index;
                     this.choices.push(img);
-
                 };
 
                 img.onload = Game.start_rotate.bind(Game);
