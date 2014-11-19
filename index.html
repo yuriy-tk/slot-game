@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<head>
+    <title>canvas</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+    <body>
+
+
+    <div id="slot">
+        <canvas height="160" width="840" id="canvas">
+            Обновите браузер
+        </canvas>
+        
+        <div id="control">
+            <select id="variants"></select>
+
+            <button id="shuffle" class="active"></button>
+        </div>
+
+        <div id="game_message"></div>
+    </div>
+      
+
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+        Game.push_to_select();
+    </script>
+
+</body>
+</html>
